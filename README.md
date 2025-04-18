@@ -1,39 +1,54 @@
-# News Scraping and Summarization System
+# 📰 NewsSense – "Why Is My Nifty Down?"
 
-## Overview
-
-This project implements a fully functional **News Scraping and Summarization System** that extracts headlines and full articles from multiple online sources and generates concise summaries using advanced Natural Language Processing (NLP) and Large Language Model (LLM) technologies.
-
-The system is built using Python libraries such as `requests` and `BeautifulSoup` for scraping, and integrates the **Gemini-2.0-Flash LLM** for summarizing the content.
+Have you ever checked your stocks or mutual funds and thought, “Why is this down today?”  
+Most platforms just tell you the percentage drop, but not **why**.  
+**NewsSense** bridges that gap using smart AI and real-world news analysis to give investors the **why behind the dip**.
 
 ---
 
-## Features
+## 🚀 Project Overview
 
-- Extracts news headlines and full articles from specified websites
-- Parses HTML to extract relevant metadata (e.g., author, date, category)
-- Cleans and preprocesses raw HTML/text data
-- Summarizes articles using the Gemini-2.0-Flash LLM
-- Outputs summaries in a structured, readable format
-- Supports storage in JSON, CSV, or databases
+**NewsSense** is an AI-powered explanation system that connects **stock performance** with **real-world news and events**.  
+It helps users understand the **context** behind market movements using live data, news scraping, LLM-powered summarization, and a clean, interactive UI.
 
 ---
 
-## Technologies Used
+## 🔧 Tech Stack
 
-### Scraping Tools
-- **Requests** – For sending HTTP requests to news websites.
-- **BeautifulSoup** – For parsing and extracting HTML content.
+### 📊 Stock Data
+- **[yfinance](https://pypi.org/project/yfinance/)**: Fetches live and historical stock data (e.g., daily, weekly, 10-day trends).
 
-### NLP & LLM
-- **Model**: `Gemini-2.0-Flash LLM`
-- **Purpose**: High-quality summarization of news content.
-- **Key Features**:
-  - Contextual understanding and semantic analysis
-  - Efficient handling of large volumes of text
-  - Generates coherent and concise summaries
+### 🌐 Web Scraping
+- **requests**: For sending HTTP requests to gather news data.
+- **BeautifulSoup**: To parse and extract useful news content from web pages.
 
+### 🧠 AI / NLP
+- **Gemini-2.0-Flash LLM**: Used for high-quality summarization of extracted news articles.
+  - Contextual understanding of economic and financial language
+  - Handles large volumes of text efficiently
+  - Generates concise, informative summaries explaining stock performance
 
+### 🖥️ Frontend
+- **Streamlit**: Used to build an intuitive, interactive web interface to:
+  - Enter stock symbols
+  - View performance charts
+  - Read AI-generated news explanations
 
-# NewsSense
-# NewsSense
+### 📈 Visualization
+- Matplotlib / Plotly: Generate graphs showing stock trends over:
+  - The current day
+  - The last week
+  - The last 10 days
+  - Custom ranges (coming soon)
+
+---
+
+## 💡 Key Features
+
+- 🔍 Scrapes latest financial news from multiple sources
+- 🧠 Uses LLMs to generate human-like explanations of market movements
+- 📉 Visualizes stock performance in clear, interactive graphs
+- 🖥️ Clean and simple UI built with Streamlit
+- 📚 Connects the **'what'** (drop in value) with the **'why'** (news events and trends)
+
+---
